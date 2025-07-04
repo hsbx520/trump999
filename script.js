@@ -616,7 +616,7 @@ class PurchaseNotificationSystem {
             this.showNotification();
         }, 3000);
         
-        // Then show every 10 seconds
+        // Then show every 22 seconds
         this.intervalId = setInterval(() => {
             this.showNotification();
         }, 10000);
