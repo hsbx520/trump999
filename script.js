@@ -616,10 +616,10 @@ class PurchaseNotificationSystem {
             this.showNotification();
         }, 3000);
         
-        // Then show every 30 seconds
+        // Then show every 60 seconds
         this.intervalId = setInterval(() => {
             this.showNotification();
-        }, 30000);
+        }, 60000);
     }
 
     stop() {
