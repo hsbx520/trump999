@@ -199,7 +199,7 @@ document.getElementById('generate-link').addEventListener('click', function() {
         <p><strong>How it works:</strong></p>
         <ul style="text-align: left; color: var(--text-secondary); margin: 1rem 0;">
             <li>Share your link with friends</li>
-            <li>When they visit and make a purchase, you both earn 2,500 WLFG</li>
+            <li>For each successful referral, both you and your friend will receive 2,500 WLFG tokens.</li>
             <li>Rewards are automatically airdropped after presale ends</li>
         </ul>
     `);
