@@ -35,8 +35,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const RATES = {
     // 1 ETH = 239,360 WLFG
     'eth': { wlfg_per_unit: 239360, min: 0.02 },
-    // 1 BNB = 58,000 WLFG
-    'bnb': { wlfg_per_unit: 58000, min: 0.1 },
+    // 1 BNB = 58,520 WLFG
+    'bnb': { wlfg_per_unit: 58520, min: 0.1 },
     // 1 USDT = 88 WLFG
     'usdt': { wlfg_per_unit: 88, min: 50 },
     // 1 USDC = 88 WLFG
