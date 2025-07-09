@@ -580,7 +580,7 @@ class PurchaseNotificationSystem {
     calculateTokensFromAmount(amount, currency) {
         // Use the exact rates from the presale
         const rates = {
-            'ETH': 225000,
+            'ETH': 239360,
             'BNB': 58000,
             'USDT': 88,
             'USDC': 88
