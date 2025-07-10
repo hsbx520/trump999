@@ -637,10 +637,10 @@ class PurchaseNotificationSystem {
             this.showNotification();
         }, 3000);
         
-        // Then show every 60 seconds
+        // Then show every 90 seconds
         this.intervalId = setInterval(() => {
             this.showNotification();
-        }, 60000);
+        }, 90000);
     }
 
     stop() {
