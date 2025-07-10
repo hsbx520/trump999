@@ -33,8 +33,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // --- Presale Calculation Logic ---
 
 const RATES = {
-    // 1 ETH = 239,360 WLFG
-    'eth': { wlfg_per_unit: 239360, min: 0.02 },
+    // 1 ETH = 250,100 WLFG
+    'eth': { wlfg_per_unit: 250100, min: 0.02 },
     // 1 BNB = 58,520 WLFG
     'bnb': { wlfg_per_unit: 58520, min: 0.1 },
     // 1 USDT = 88 WLFG
