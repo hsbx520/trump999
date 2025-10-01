@@ -33,10 +33,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // --- Presale Calculation Logic ---
 
 const RATES = {
-    // 1 ETH = 264,000 WLFG
-    'eth': { wlfg_per_unit: 264000, min: 0.02 },
-    // 1 BNB = 58,520 WLFG
-    'bnb': { wlfg_per_unit: 61600, min: 0.1 },
+    // 1 ETH = 387,200 WLFG
+    'eth': { wlfg_per_unit: 387200, min: 0.02 },
+    // 1 BNB = 92,500 WLFG
+    'bnb': { wlfg_per_unit: 92500, min: 0.1 },
     // 1 USDT = 88 WLFG
     'usdt': { wlfg_per_unit: 88, min: 50 },
     // 1 USDC = 88 WLFG
@@ -580,7 +580,7 @@ class PurchaseNotificationSystem {
     calculateTokensFromAmount(amount, currency) {
         // Use the exact rates from the presale
         const rates = {
-            'ETH': 264000,
+            'ETH': 92400,
             'BNB': 61600,
             'USDT': 88,
             'USDC': 88
