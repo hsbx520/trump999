@@ -33,14 +33,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // --- Presale Calculation Logic ---
 
 const RATES = {
-    // 1 ETH = 387,200 WLFG
-    'eth': { wlfg_per_unit: 387200, min: 0.02 },
-    // 1 BNB = 92,500 WLFG
-    'bnb': { wlfg_per_unit: 92500, min: 0.1 },
+    // 1 ETH = 360,800 WLFG
+    'eth': { wlfg_per_unit: 387200, min: 0.05 },
+    // 1 BNB = 114,400 WLFG
+    'bnb': { wlfg_per_unit: 92500, min: 0.3 },
     // 1 USDT = 88 WLFG
-    'usdt': { wlfg_per_unit: 88, min: 50 },
+    'usdt': { wlfg_per_unit: 88, min: 200 },
     // 1 USDC = 88 WLFG
-    'usdc': { wlfg_per_unit: 88, min: 50 }
+    'usdc': { wlfg_per_unit: 88, min: 200 }
 };
 
 const amountInput = document.getElementById('amount');
@@ -310,7 +310,7 @@ document.querySelectorAll('.faq-question').forEach(question => {
 // Countdown Timer Logic
 function startCountdown() {
     // Target date: August 10, 2025, 12:00 PM US Eastern Time (EDT which is UTC-4)
-    const targetDate = new Date('2025-10-05T12:00:00-04:00').getTime();
+    const targetDate = new Date('2025-10-18T12:00:00-04:00').getTime();
     
     const countdownTimerEl = document.getElementById('countdown-timer');
     const daysEl = document.getElementById('days');
@@ -567,11 +567,11 @@ class PurchaseNotificationSystem {
         let amount;
         
         if (currency === 'ETH') {
-            amount = (Math.random() * 2 + 0.02).toFixed(2);
+            amount = (Math.random() * 2 + 0.05).toFixed(2);
         } else if (currency === 'BNB') {
-            amount = (Math.random() * 10 + 0.1).toFixed(2);
+            amount = (Math.random() * 10 + 0.3).toFixed(2);
         } else {
-            amount = (Math.random() * 5000 + 50).toFixed(0);
+            amount = (Math.random() * 5000 + 200).toFixed(0);
         }
         
         return { amount, currency };
@@ -580,8 +580,8 @@ class PurchaseNotificationSystem {
     calculateTokensFromAmount(amount, currency) {
         // Use the exact rates from the presale
         const rates = {
-            'ETH': 92400,
-            'BNB': 61600,
+            'ETH': 360800,
+            'BNB': 114400,
             'USDT': 88,
             'USDC': 88
         };
