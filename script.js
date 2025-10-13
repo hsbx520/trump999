@@ -164,7 +164,7 @@ function showInviteNotification(referrerAddress) {
     const notification = document.createElement('div');
     notification.className = 'invite-notification';
     notification.innerHTML = `
-        🎉 You were invited by ${shortAddress}! Both of you will earn 2,000 WLFG tokens after presale completion.
+        🎉 You were invited by ${shortAddress}! Both of you will earn 2,500 WLFG tokens after presale completion.
     `;
     
     document.body.insertBefore(notification, document.body.firstChild);
@@ -202,7 +202,7 @@ document.getElementById('generate-link').addEventListener('click', function() {
         <p><strong>How it works:</strong></p>
         <ul style="text-align: left; color: var(--text-secondary); margin: 1rem 0;">
             <li>Share your link with friends</li>
-            <li>When they visit and make a purchase, you both earn 2,000 WLFG</li>
+            <li>When they visit and make a purchase, you both earn 2,500 WLFG</li>
             <li>Rewards are automatically airdropped after presale ends</li>
         </ul>
     `);
